@@ -30,13 +30,13 @@ export class ItemListComponent implements OnInit {
       switchMap(searchObj => this.resultsService.getItemList(searchObj))
     ).subscribe((results) => {
       this.listItem = results;
-    })
+    });
   }
 
   updateSearch($event) {
     if ($event === null) {
       this.search.clear();
-    } {
+    } else {
       this.order = $event.orderControl;
       this.typeFilter = $event.typeControl;
     }

@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
-import {Observable, of,} from "rxjs";
-import {HttpClient} from "@angular/common/http";
-import {catchError} from "rxjs/operators";
-import {ItemInterface} from "./../models/item.interface";
-
+import { Observable, of } from "rxjs";
+import { HttpClient } from "@angular/common/http";
+import { catchError } from "rxjs/operators";
+import { ItemInterface } from "./../models/item.interface";
 
 @Injectable({
   providedIn: 'root'

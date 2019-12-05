@@ -27,9 +27,9 @@ export class FiltersComponent implements OnInit {
   }
 
   updateControl() {
-    setTimeout(()=> {
+    setTimeout(() => {
       this.updateSearch.emit(this.filterFormGroup.getRawValue());
-    },0)
+    }, 0);
   }
 
   setDefaultValues() {

@@ -1,0 +1,35 @@
+form {
+  float: left;
+}
+
+select {
+  width: 150px;
+  box-shadow: none;
+  background: #fff0d9;
+  height: 30px;
+  margin: 10px 14px 10px 0px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.info {
+  font-size: 18px;
+  float: left;
+  line-height: 45px;
+  margin-bottom: 0;
+  margin-right: 8px;
+  color: #b1b1b1;
+}
+
+.clear-btn {
+  height: 30px;
+  font-size: 12px;
+  float: right;
+  margin-top: 10px;
+}
+
+.filters-container {
+  overflow: hidden;
+}

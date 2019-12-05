@@ -1,0 +1,15 @@
+<div class="filters-container">
+  <p class="info">Filters: </p>
+  <form [formGroup]="filterFormGroup">
+    <select formControlName="typeControl" (input)="updateControl()">
+      <option *ngFor="let type of typeItem" [value]="type.value">{{type.name}}</option>
+    </select>
+    <select formControlName="orderControl" (input)="updateControl()">
+      <option *ngFor="let order of orders" [value]="order.value">{{order.name}}</option>
+    </select>
+  </form>
+  <button (click)="setDefaultValues()" class="btn btn-secondary clear-btn" type="button">
+    clear
+    <i class="fa fa-eraser"></i>
+  </button>
+</div>
